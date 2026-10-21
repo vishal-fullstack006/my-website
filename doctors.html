@@ -1,0 +1,677 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Our Doctors | CarePoint</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@600;700;800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<header class="navbar">
+
+    <div class="container nav-wrap">
+
+        <a href="index.html" class="brand">
+            <span class="brand-mark">+</span>
+            Care<span>Point</span>
+        </a>
+
+        <button class="mobile-menu" id="menuBtn">☰</button>
+
+        <nav id="navMenu">
+            <a href="index.html">Home</a>
+            <a href="doctors.html" class="active">Doctors</a>
+            <a href="services.html">Services</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+
+            <button class="theme-toggle" id="themeToggle">🌙</button>
+
+            <a href="appointment.html" class="nav-btn">
+                Book Visit
+            </a>
+        </nav>
+
+    </div>
+
+</header>
+
+
+<section class="page-hero">
+
+    <div class="container">
+
+        <span class="section-tag">OUR MEDICAL TEAM</span>
+
+        <h1>
+            Meet your
+            <span>healthcare team.</span>
+        </h1>
+
+        <p>
+            Experienced specialists who listen, understand
+            and put your health first.
+        </p>
+
+    </div>
+
+</section>
+
+
+<section class="doctor-directory">
+
+    <div class="container">
+
+        <div class="doctor-tools">
+
+            <div class="search-field">
+                <span>⌕</span>
+
+                <input
+                    type="text"
+                    id="doctorSearch"
+                    placeholder="Search by doctor name..."
+                >
+            </div>
+
+
+            <div class="filter-field">
+
+                <select id="specialtyFilter">
+
+                    <option value="all">
+                        All specialties
+                    </option>
+
+                    <option value="cardiology">
+                        Cardiology
+                    </option>
+
+                    <option value="neurology">
+                        Neurology
+                    </option>
+
+                    <option value="dermatology">
+                        Dermatology
+                    </option>
+
+                    <option value="pediatrics">
+                        Pediatrics
+                    </option>
+
+                    <option value="orthopedics">
+                        Orthopedics
+                    </option>
+
+                    <option value="dentistry">
+                        Dentistry
+                    </option>
+
+                    <option value="gynecology">
+                        Gynecology
+                    </option>
+
+                    <option value="ophthalmology">
+                        Ophthalmology
+                    </option>
+
+                </select>
+
+            </div>
+
+        </div>
+
+
+        <div class="directory-grid">
+
+
+            <!-- 1 -->
+            <article
+                class="doctor-profile searchable-doctor"
+                data-name="Sarah Lee"
+                data-specialty="cardiology"
+                data-doctor="Sarah Lee"
+            >
+
+                <div class="profile-image">
+
+                    <img
+                        src="https://randomuser.me/api/portraits/women/44.jpg"
+                        alt="Dr Sarah Lee"
+                    >
+
+                    <span class="status">Available</span>
+
+                </div>
+
+                <div class="profile-body">
+
+                    <div class="profile-rating">★ 4.9</div>
+
+                    <h2>Dr. Sarah Lee</h2>
+
+                    <p class="profile-specialty">
+                        Cardiologist
+                    </p>
+
+                    <p class="profile-description">
+                        Heart health and preventive cardiology specialist.
+                    </p>
+
+                    <div class="profile-meta">
+                        <span>12+ years</span>
+                        <span>MBBS, MD</span>
+                    </div>
+
+                    <div class="profile-buttons">
+
+                        <button class="profile-btn view-profile"
+                                data-doctor="Sarah Lee">
+                            View Profile
+                        </button>
+
+                        <a href="appointment.html"
+                           class="profile-book">
+                            Book
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+            <!-- 2 -->
+            <article
+                class="doctor-profile searchable-doctor"
+                data-name="David Carter"
+                data-specialty="neurology"
+                data-doctor="David Carter"
+            >
+
+                <div class="profile-image">
+
+                    <img
+                        src="https://randomuser.me/api/portraits/men/32.jpg"
+                        alt="Dr David Carter"
+                    >
+
+                    <span class="status">Available</span>
+
+                </div>
+
+                <div class="profile-body">
+
+                    <div class="profile-rating">★ 4.8</div>
+
+                    <h2>Dr. David Carter</h2>
+
+                    <p class="profile-specialty">
+                        Neurologist
+                    </p>
+
+                    <p class="profile-description">
+                        Brain, spine and nervous system specialist.
+                    </p>
+
+                    <div class="profile-meta">
+                        <span>15+ years</span>
+                        <span>MBBS, DM</span>
+                    </div>
+
+                    <div class="profile-buttons">
+
+                        <button class="profile-btn view-profile"
+                                data-doctor="David Carter">
+                            View Profile
+                        </button>
+
+                        <a href="appointment.html"
+                           class="profile-book">
+                            Book
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+            <!-- 3 -->
+            <article
+                class="doctor-profile searchable-doctor"
+                data-name="Emily Morgan"
+                data-specialty="dermatology"
+                data-doctor="Emily Morgan"
+            >
+
+                <div class="profile-image">
+
+                    <img
+                        src="https://randomuser.me/api/portraits/women/68.jpg"
+                        alt="Dr Emily Morgan"
+                    >
+
+                    <span class="status">Available</span>
+
+                </div>
+
+                <div class="profile-body">
+
+                    <div class="profile-rating">★ 4.9</div>
+
+                    <h2>Dr. Emily Morgan</h2>
+
+                    <p class="profile-specialty">
+                        Dermatologist
+                    </p>
+
+                    <p class="profile-description">
+                        Skin, hair and cosmetic dermatology specialist.
+                    </p>
+
+                    <div class="profile-meta">
+                        <span>10+ years</span>
+                        <span>MBBS, MD</span>
+                    </div>
+
+                    <div class="profile-buttons">
+
+                        <button class="profile-btn view-profile"
+                                data-doctor="Emily Morgan">
+                            View Profile
+                        </button>
+
+                        <a href="appointment.html"
+                           class="profile-book">
+                            Book
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+            <!-- 4 -->
+            <article
+                class="doctor-profile searchable-doctor"
+                data-name="Olivia Brown"
+                data-specialty="pediatrics"
+                data-doctor="Olivia Brown"
+            >
+
+                <div class="profile-image">
+
+                    <img
+                        src="https://randomuser.me/api/portraits/women/65.jpg"
+                        alt="Dr Olivia Brown"
+                    >
+
+                    <span class="status">Available</span>
+
+                </div>
+
+                <div class="profile-body">
+
+                    <div class="profile-rating">★ 4.9</div>
+
+                    <h2>Dr. Olivia Brown</h2>
+
+                    <p class="profile-specialty">
+                        Pediatrician
+                    </p>
+
+                    <p class="profile-description">
+                        Children's health and development specialist.
+                    </p>
+
+                    <div class="profile-meta">
+                        <span>9+ years</span>
+                        <span>MBBS, DCH</span>
+                    </div>
+
+                    <div class="profile-buttons">
+
+                        <button class="profile-btn view-profile"
+                                data-doctor="Olivia Brown">
+                            View Profile
+                        </button>
+
+                        <a href="appointment.html"
+                           class="profile-book">
+                            Book
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+            <!-- 5 -->
+            <article
+                class="doctor-profile searchable-doctor"
+                data-name="Daniel Miller"
+                data-specialty="orthopedics"
+                data-doctor="Daniel Miller"
+            >
+
+                <div class="profile-image">
+
+                    <img
+                        src="https://randomuser.me/api/portraits/men/52.jpg"
+                        alt="Dr Daniel Miller"
+                    >
+
+                    <span class="status">Available</span>
+
+                </div>
+
+                <div class="profile-body">
+
+                    <div class="profile-rating">★ 4.8</div>
+
+                    <h2>Dr. Daniel Miller</h2>
+
+                    <p class="profile-specialty">
+                        Orthopedic Surgeon
+                    </p>
+
+                    <p class="profile-description">
+                        Bones, joints, sports injuries and rehabilitation.
+                    </p>
+
+                    <div class="profile-meta">
+                        <span>14+ years</span>
+                        <span>MBBS, MS</span>
+                    </div>
+
+                    <div class="profile-buttons">
+
+                        <button class="profile-btn view-profile"
+                                data-doctor="Daniel Miller">
+                            View Profile
+                        </button>
+
+                        <a href="appointment.html"
+                           class="profile-book">
+                            Book
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+            <!-- 6 -->
+            <article
+                class="doctor-profile searchable-doctor"
+                data-name="Sophia Taylor"
+                data-specialty="gynecology"
+                data-doctor="Sophia Taylor"
+            >
+
+                <div class="profile-image">
+
+                    <img
+                        src="https://randomuser.me/api/portraits/women/50.jpg"
+                        alt="Dr Sophia Taylor"
+                    >
+
+                    <span class="status">Available</span>
+
+                </div>
+
+                <div class="profile-body">
+
+                    <div class="profile-rating">★ 4.9</div>
+
+                    <h2>Dr. Sophia Taylor</h2>
+
+                    <p class="profile-specialty">
+                        Gynecologist
+                    </p>
+
+                    <p class="profile-description">
+                        Women's health and reproductive care specialist.
+                    </p>
+
+                    <div class="profile-meta">
+                        <span>13+ years</span>
+                        <span>MBBS, MD</span>
+                    </div>
+
+                    <div class="profile-buttons">
+
+                        <button class="profile-btn view-profile"
+                                data-doctor="Sophia Taylor">
+                            View Profile
+                        </button>
+
+                        <a href="appointment.html"
+                           class="profile-book">
+                            Book
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+            <!-- 7 -->
+            <article
+                class="doctor-profile searchable-doctor"
+                data-name="William Davis"
+                data-specialty="ophthalmology"
+                data-doctor="William Davis"
+            >
+
+                <div class="profile-image">
+
+                    <img
+                        src="https://randomuser.me/api/portraits/men/41.jpg"
+                        alt="Dr William Davis"
+                    >
+
+                    <span class="status">Available</span>
+
+                </div>
+
+                <div class="profile-body">
+
+                    <div class="profile-rating">★ 4.8</div>
+
+                    <h2>Dr. William Davis</h2>
+
+                    <p class="profile-specialty">
+                        Ophthalmologist
+                    </p>
+
+                    <p class="profile-description">
+                        Complete eye care and vision treatment specialist.
+                    </p>
+
+                    <div class="profile-meta">
+                        <span>16+ years</span>
+                        <span>MBBS, MS</span>
+                    </div>
+
+                    <div class="profile-buttons">
+
+                        <button class="profile-btn view-profile"
+                                data-doctor="William Davis">
+                            View Profile
+                        </button>
+
+                        <a href="appointment.html"
+                           class="profile-book">
+                            Book
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+            <!-- 8 -->
+            <article
+                class="doctor-profile searchable-doctor"
+                data-name="James Wilson"
+                data-specialty="dentistry"
+                data-doctor="James Wilson"
+            >
+
+                <div class="profile-image">
+
+                    <img
+                        src="https://randomuser.me/api/portraits/men/46.jpg"
+                        alt="Dr James Wilson"
+                    >
+
+                    <span class="status">Available</span>
+
+                </div>
+
+                <div class="profile-body">
+
+                    <div class="profile-rating">★ 4.7</div>
+
+                    <h2>Dr. James Wilson</h2>
+
+                    <p class="profile-specialty">
+                        Dentist
+                    </p>
+
+                    <p class="profile-description">
+                        General, cosmetic and preventive dental care.
+                    </p>
+
+                    <div class="profile-meta">
+                        <span>11+ years</span>
+                        <span>BDS, MDS</span>
+                    </div>
+
+                    <div class="profile-buttons">
+
+                        <button class="profile-btn view-profile"
+                                data-doctor="James Wilson">
+                            View Profile
+                        </button>
+
+                        <a href="appointment.html"
+                           class="profile-book">
+                            Book
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+        </div>
+
+        <div id="noDoctors" class="no-results">
+            No doctors found. Try another search.
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- PROFILE MODAL -->
+<div class="profile-modal" id="profileModal">
+
+    <div class="modal-box">
+
+        <button class="modal-close" id="modalClose">×</button>
+
+        <div class="modal-grid">
+
+            <div class="modal-photo">
+
+                <img id="modalImage" src="" alt="Doctor">
+
+            </div>
+
+            <div class="modal-details">
+
+                <span class="section-tag" id="modalSpecialty">
+                    Specialist
+                </span>
+
+                <h2 id="modalName">
+                    Doctor Name
+                </h2>
+
+                <div class="modal-rating">
+                    ★ <span id="modalRating">4.9</span>
+                    <small>Patient rating</small>
+                </div>
+
+                <p id="modalDescription"></p>
+
+                <div class="modal-info-grid">
+
+                    <div>
+                        <span>Qualification</span>
+                        <strong id="modalQualification">MBBS, MD</strong>
+                    </div>
+
+                    <div>
+                        <span>Experience</span>
+                        <strong id="modalExperience">12+ Years</strong>
+                    </div>
+
+                    <div>
+                        <span>Availability</span>
+                        <strong id="modalDays">Mon - Sat</strong>
+                    </div>
+
+                    <div>
+                        <span>Consultation</span>
+                        <strong>9 AM - 6 PM</strong>
+                    </div>
+
+                </div>
+
+                <a href="appointment.html"
+                   class="btn btn-primary modal-book">
+                    Book Appointment →
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+<div id="toast" class="toast"></div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
